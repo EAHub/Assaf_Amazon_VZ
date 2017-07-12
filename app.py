@@ -20,5 +20,9 @@ def Page2():
 def Page3():
 	return render_template('Page3.html')
 
+@app.route('/Page4', methods=['GET','POST'])
+def Page3():
+	return render_template('Page4.html')
+
 if __name__ == '__main__':
   app.run(port=33507)
