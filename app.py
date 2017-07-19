@@ -6,7 +6,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-  return redirect('/Page_1')
+  return redirect('/Page_0')
+
+@app.route('/Page_0', methods=['GET','POST'])
+def Page_0():
+  return render_template('Page_0.html')
 
 @app.route('/Page_1', methods=['GET','POST'])
 def Page_1():
